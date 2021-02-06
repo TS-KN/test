@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    background-color: white;
+}
+
+ /* ベースレイアウト */
+ #wrapper{
+     max-width: 960px;
+     margin: 30px auto;
+     padding: 0 15px;
+     min-height: 300px;
+ }
+
+ #input-form .input-text{
+    display: flex;
+    align-items: center;
+ }
+
+ #input-form .input-text + .input-text,
+ #input-form .input-text + .submit{
+     margin-top: 1rem;
+ }
+
+ /* テキストボックス */
+ .input-text input{
+     border:1px solid #e6e6e6;
+     width: 6em;
+     line-height: 30px;
+     text-align: center;
+ }
+
+ .input-text label{
+     display: block;
+     padding: 0 1em;
+     width: 6em;
+ }
+
+ /* 残り秒数 */
+ .input-text span{
+     display: inline-block;
+     white-space: nowrap;
+ }
+
+ .input-text span + span{
+     margin-left: 1rem;
+ }
+
+ /* ボタン */
+ .submit button{
+     margin: 0 0;
+     padding: 0 10px;
+     border: 1px solid #e6e6e6;
+     border-radius: .5em;
+     line-height: 30px;
+     font-size: 16px;
+     transition: all 0.1s ease-in;
+ }
+
+ .submit button + button{
+     margin-left: .2em;
+ }
+
+ .submit button:disabled{
+     cursor: not-allowed;
+     opacity: 0.5;
+ }
+
+ .submit button#start-button{
+     background: #1aaeb3;
+     color: #ffffff;
+ }
